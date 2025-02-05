@@ -19,6 +19,7 @@ Model = ksn_sr04t_ns.enum("Model")
 MODEL = {
     "ksn_sr04t": Model.KSN_SR04T,
     "aj_sr04m": Model.AJ_SR04M,
+    "aj_sr04m2": Model.AJ_SR04M2
 }
 
 CONFIG_SCHEMA = (

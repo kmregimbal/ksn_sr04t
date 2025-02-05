@@ -12,6 +12,7 @@ namespace ksn_sr04t {
 enum Model {
   KSN_SR04T,
   AJ_SR04M,
+  AJ_SR04M2,
 };
 
 class Ksnsr04tComponent : public sensor::Sensor, public PollingComponent, public uart::UARTDevice {
