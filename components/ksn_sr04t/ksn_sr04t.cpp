@@ -40,7 +40,7 @@ void Ksnsr04tComponent::check_buffer_() {
       checksum = this->buffer_[1] + this->buffer_[2];
       break;
     case AJ_SR04M2:
-      checksum = (this.buffer_[0] + this->buffer_[1] + this->buffer_[2]) & 0x00ff;
+      checksum = (this->buffer_[0] + this->buffer_[1] + this->buffer_[2]) & 0x00ff;
   }
 
   if (this->buffer_[3] == checksum) {
