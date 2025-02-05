@@ -25,7 +25,7 @@ MODEL = {
 CONFIG_SCHEMA = (
     sensor.sensor_schema(
         Ksnsr04tComponent,
-        unit_of_measurement=UNIT_METER,
+        unit_of_measurement=UNIT_CENTIMETER,
         icon=ICON_ARROW_EXPAND_VERTICAL,
         accuracy_decimals=3,
         state_class=STATE_CLASS_MEASUREMENT,

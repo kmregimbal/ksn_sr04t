@@ -46,9 +46,9 @@ void Ksnsr04tComponent::check_buffer_() {
   if (this->buffer_[3] == checksum) {
     uint16_t distance = encode_uint16(this->buffer_[1], this->buffer_[2]);
     if (distance > 250) {
-      float meters = distance / 1000.0f;
+      float centimeters = distance / 10.0f;
       ESP_LOGV(TAG, "Distance from sensor: %umm, %.3fm", distance, meters);
-      this->publish_state(meters);
+      this->publish_state(centimeters);
     } else {
       ESP_LOGW(TAG, "Invalid data read from sensor: %s", format_hex_pretty(this->buffer_).c_str());
     }
