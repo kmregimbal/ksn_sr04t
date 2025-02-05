@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 from esphome.components import sensor, uart
 from esphome.const import (
     STATE_CLASS_MEASUREMENT,
-    UNIT_METER,
+    UNIT_CENTIMETER,
     ICON_ARROW_EXPAND_VERTICAL,
     CONF_MODEL,
 )
